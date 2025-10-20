@@ -1,0 +1,11 @@
+1. Think about structure and how we design our messages.
+
+2. "Structure" is a narrative or storyline that connects ideas with one another.
+You have to know where you're going to start and where you're going to end.
+
+3. Explicitly signal the structure to the reader at the beginning of the presentation, so as to help the reader easier
+process the information.
+
+4. Be conscious of the micro/macro-level structure of a text.
+The micro level refers to the structure within paragraphs, such as topic, arguments, and evidence, 
+while the macro level refers to the overall structure of the text, such as introduction, methods, results, and conclusion.

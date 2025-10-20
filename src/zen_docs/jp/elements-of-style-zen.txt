@@ -1,0 +1,7 @@
+1. Be Clear
+文章は明確でなければならない
+
+20. Keep related words together to make their relationship clear.
+
+21. Technical terms must be used in the correct context and with the correct meaning.
+専門用語は正しいコンテクストと意味で用いなければならない
