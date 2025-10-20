@@ -1,0 +1,5 @@
+1. Be Clear
+
+20. Keep related words together to make their relationship clear.
+
+21. Technical terms must be used in the correct context and with the correct meaning.

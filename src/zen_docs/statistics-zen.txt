@@ -1,0 +1,9 @@
+1. K.I.S.S. (Keep it simple, stupid!): If two models are generally similar in terms of their error statistics and other \
+diagnostics, you should prefer the one that is simpler and/or easier to understand. \
+The simpler model is likely to be closer to the truth, and it will usually be more easily accepted by others.
+
+2. The validation-period results are not necessarily the last word either, because of the issue of sample size: \
+if Model A is slightly better in a validation period of size 10 while Model B is much better over an estimation period of size 40, \
+I would study the data closely to try to ascertain whether Model A merely "got lucky" in the validation period.
+
+3. There is no absolute criterion for a "good" value of RMSE or MAE: it depends on the units in which the variable is measured
