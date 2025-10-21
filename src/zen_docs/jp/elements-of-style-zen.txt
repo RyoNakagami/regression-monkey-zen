@@ -1,6 +1,10 @@
 1. Be Clear
 文章は明確でなければならない
 
+17. Omit needless words; let every word tell.
+不要な言葉を取り除き，すべての言葉に意味をもたせる
+
+
 20. Keep related words together to make their relationship clear.
 
 21. Technical terms must be used in the correct context and with the correct meaning.
