@@ -1,9 +1,13 @@
+#-----------------------------------------------------------------------------------#
+# Source:
+#   - The Elements of Style
+#   - https://www.bartleby.com/141/
+#-----------------------------------------------------------------------------------#
 1. Be Clear
 文章は明確でなければならない
 
 17. Omit needless words; let every word tell.
 不要な言葉を取り除き，すべての言葉に意味をもたせる
-
 
 20. Keep related words together to make their relationship clear.
 

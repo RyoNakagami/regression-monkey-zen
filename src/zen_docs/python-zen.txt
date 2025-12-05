@@ -1,0 +1,9 @@
+#-----------------------------------------------------------------------------------#
+# Source:
+#   - name: PEP 8 – Style Guide for Python Code
+#     url: https://peps.python.org/pep-0008/
+#-----------------------------------------------------------------------------------#
+
+1. Composition is often more appropriate than inheritance.
+
+2. Constants should live at the module’s top. Clear names in ALL_CAPS let them speak for themselves.
