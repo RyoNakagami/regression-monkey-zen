@@ -1,0 +1,17 @@
+meta-data:
+  repository-name: regrmonkey-zen
+  visibility: public
+  org-name: RyoNakagami
+  tag:
+    - cli-tool
+    - zen-principles
+    - zen
+    - python-zen
+    - unix-philosophy
+    - software-development
+    - data-visualization
+    - research-methodologies
+    - exploratory-data-analysis
+    - best-practices
+  description: |
+    A command-line tool for displaying various \"Zen\" principles spanning Unix philosophy, software development, data visualization, and research methodologies.

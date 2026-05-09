@@ -1,4 +1,4 @@
-# REGMONKEY_ZEN
+# regmonkey-zen
 
 Unixの哲学、ソフトウェア開発、データ可視化、研究手法など、さまざまな「Zen」の原則を表示するためのスクリプト
 
@@ -30,13 +30,13 @@ Unixの哲学、ソフトウェア開発、データ可視化、研究手法な�
 1. `.zshrc` or `.bashrc` にパスに追加：
 
    ```bash
-   export PATH="$PATH:/path/to/regression-monkey-zen/src"
+   export PATH="$PATH:/path/to/regmonkey-zen/src"
    ```
 
 2. (Optional) エイリアスを追加：
 
    ```bash
-   alias regmonkey_zen="/path/to/regression-monkey-zen/src/regmonkey_zen.sh"
+   alias regmonkey_zen="/path/to/regmonkey-zen/src/regmonkey_zen.sh"
    ```
 
 ## Usage

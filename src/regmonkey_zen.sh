@@ -1,7 +1,7 @@
 #!/bin/bash
 # ------------------------------------------------
 # Author: Ryo Nakagami
-# Revised: 2025-10-20
+# Revised: 2025-11-19
 # Description:
 #   Regmonkey Zen Launcher
 #
@@ -23,22 +23,26 @@
 # Options:
 #   -p    Pipe output through less for scrolling
 # ------------------------------------------------
+
 set -euo pipefail
 
-# Enable nullglob so globs that don't match disappear
+# ---- Enable nullglob so globs that don't match disappear ----
 shopt -s nullglob
 
-# Directories and files
+# ---- Directories and files ----
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ZEN_DOCS_DIR="${SCRIPT_DIR}/zen_docs"
 ZEN_PARSER="${SCRIPT_DIR}/utils/zen_parser.sh"
+
+# ---- Load dependencies ----
+source "${SCRIPT_DIR}/utils/docstring.sh"
 
 # Default: no pager
 USE_LESS=false
 LANGUAGE="en"  # en: english, default, jp: 日本語
 
-# parse options
-while getopts ":l:p" opt; do
+# ---- parse options ----
+while getopts ":l:ph" opt; do
   case $opt in
     l)
       # -l: setup language
@@ -48,9 +52,10 @@ while getopts ":l:p" opt; do
       # -p: setup pager
       USE_LESS=true
       ;;
-    :)
-      # without argument
-      echo "Option -$OPTARG requires an argument (en or jp)." >&2
+
+    h)
+      # -h: display help
+      usage_helper
       exit 1
       ;;
     \?)

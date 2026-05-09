@@ -1,0 +1,68 @@
+I. The Essence of Code Review
+
+1. Code review is an act of discernment, not gatekeeping. Its purpose is to verify
+that new contributions advance the shared codebase without introducing defects,
+drift, or unnecessary complexity, while preserving its conventions and intent.
+
+2. In data science, code review additionally protects the validity of the analysis
+itself: accurate inference, consistent design, reusability of analytical pipelines,
+maintainability over months of iteration, and the transfer of tacit knowledge
+across the team.
+
+3. Discernment means asking whether code earns its existence. Anything that does
+not serve the author's stated purpose, the reader's understanding, or the system's
+correctness should be questioned — not accepted out of politeness.
+
+4. A review is the last cheap moment to change direction. Once merged, every line
+becomes precedent that future code will imitate.
+
+II. Checkpoints
+
+5. Purpose. Does this code accomplish what the author intended? If the intent is
+unclear, that itself is a finding — ask for the intent to be made explicit before
+judging the implementation.
+
+6. Correctness. Are there obvious logic errors? Read the code as the machine will
+execute it, not as the author meant it to read.
+
+7. Completeness. Against the stated requirements, are all cases implemented?
+Watch for silently dropped branches, unhandled inputs, and TODO debt left behind.
+
+8. Conformance. Does the code follow the existing style and conventions of the
+surrounding codebase? A new style introduced in one file becomes drift in the next.
+
+9. Improvability. Could this be shorter, faster, or clearer without harming intent?
+Resist gold-plating; only suggest changes that pay for themselves.
+
+10. Approach. Is this the best way to achieve the desired result, or merely the
+first that worked? Sometimes a smaller change to a different file removes the
+need for the diff entirely.
+
+11. Edge cases. Does the code handle empty inputs, nulls, boundary values,
+concurrent access, partial failures, and the conditions the author may not have
+considered?
+
+12. Abstractions. Do you see useful abstractions emerging from repetition — or
+premature abstractions hiding simple code? Three similar lines is better than
+the wrong abstraction.
+
+13. Tests. Are the unit tests appropriate? Tests should exercise the contract,
+not the implementation, and should fail loudly when the contract changes.
+
+14. Documentation. Are comments and docs present where intent is non-obvious —
+and absent where the code already speaks for itself? A comment that restates the
+code is noise; a comment that captures a hidden constraint is gold.
+
+III. The Discipline of the Reviewer
+
+15. Name the good as well as the bad. Calling out a strong choice teaches the
+team what "good" looks like and reinforces it; silence after merge teaches nothing.
+
+16. Critique the code, not the author. The diff is the subject; the person is
+a collaborator.
+
+17. Prefer questions over verdicts when intent is uncertain. "Why this approach?"
+surfaces more bugs than "this is wrong."
+
+18. A review without a recommended action is incomplete. Approve, request changes,
+or escalate — never leave the author to interpret silence.
