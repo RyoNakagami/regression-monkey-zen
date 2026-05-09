@@ -11,3 +11,7 @@ process the information.
 5. Be conscious of the micro/macro-level structure of a text.
 The micro level refers to the structure within paragraphs, such as topic, arguments, and evidence, 
 while the macro level refers to the overall structure of the text, such as introduction, methods, results, and conclusion.
+
+6. Datascience communication is the end-to-end process of starting from a problem,
+deriving insights based on data and logical reasoning, and conveying those insights
+in a way that decision-makers can understand and be convinced by.
